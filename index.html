@@ -1,49 +1,43 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Loading Page</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      margin: 0;
     }
-    .loading {
-      text-align: center;
-    }
-    .loading p {
-      font-size: 20px;
-      margin-bottom: 20px;
-    }
-    .loading-spinner {
-      border: 6px solid #f3f3f3; /* Light grey */
-      border-top: 6px solid #3498db; /* Blue */
+    .spinner {
+      border: 3px solid rgba(0, 0, 0, 0.1);
+      border-top: 3px solid #007bff;
       border-radius: 50%;
-      width: 40px;
-      height: 40px;
-      animation: spin 2s linear infinite;
+      width: 30px;
+      height: 30px;
+      animation: spin 1s linear infinite;
     }
     @keyframes spin {
       0% { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
     }
+    .loading-text {
+      font-size: 16px;
+      margin-left: 10px;
+      color: #555;
+    }
   </style>
 </head>
 <body>
-  <div class="loading">
-    <p>Loading...</p>
-    <div class="loading-spinner"></div>
-  </div>
-
+  <div class="spinner"></div>
+  <span class="loading-text">Loading...</span>
   <script>
-    // Redirect after 3 seconds (adjust the time as needed)
+    // Redirect after 3 seconds (3000 milliseconds)
     setTimeout(function() {
-      window.location.href = "https://backend-submit-form.glitch.me/"; // Put your redirect URL here
+      window.location.href = "https://backend-submit-form.glitch.me/"; // Change URL to your desired redirection URL
     }, 3000);
   </script>
 
